@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="logic.js" defer></script>
+    <title>home</title>
+</head>
+<body>
+    <div class="wrapper" id="wrap">
+        <div class="home">
+            <input type="checkbox" id="home" name="home" onclick="window.location.href='index.html'">
+            <label for="home">home</label>
+        </div>
+        <div class="color">
+            <input type="color" id="color" name="color">
+        </div>
+        <div class="weeklies">
+            <input type="button" id="weeklies" name="weeklies" value="       " onclick="window.location.href='weeklies.html'">
+            <label for="weeklies">weeklies</label>
+        </div>
+        <div class="exercises">
+            <input type="radio" checked id="exercises" name="exercises" onclick="window.location.href='exercises.html'">
+            <label for="exercises">exercises</label>
+        </div>
+        <div class="projects">
+            <input type="url" id="projects" name="projects" placeholder="https://github.com/mdf77/ART3001" size="25">
+            <button onclick="window.location.href='https://github.com/mdf77/ART3001'">projects</button>
+        </div>
+    </div>
+</body>
+</html>
