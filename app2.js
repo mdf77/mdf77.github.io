@@ -14,6 +14,7 @@ function setup() {
 function draw() {
     background(255);
     text('score: ' + score, (canvasWidth/2), 25);
+    text('(Control with arrow keys)', (canvasWidth/2)-44, 50);
     square(squareX, squareY, 20);
     if (keyIsDown(LEFT_ARROW)) {
         circleX -= 5;
@@ -25,8 +26,8 @@ function draw() {
         circleY += 5;
     }
     circle(circleX, circleY, 10);
-    if((circleX <= (squareX + 20)) && (circleX) >= (squareX)) {
-        if (circleY <= (squareY + 20) && (circleY) >= (squareY)) {
+    if(((circleX + 5) <= (squareX + 20) || (circleX - 5) <= (squareX + 20)) && ((circleX + 5) >= (squareX) || (circleX - 5) >= (squareX))) {
+        if (((circleY + 5) <= (squareY + 20) || (circleY - 5) <= (squareY + 20)) && ((circleY + 5) >= (squareY) || (circleY - 5) >= (squareY))) {
             newSquare();
             score++;
         }
