@@ -47,6 +47,12 @@ body, html {
     top: 27%;
 }
 
+.game {
+    position: absolute;
+    left: 43%;
+    top: 17%;
+}
+
 .blog {
     position: absolute;
     left: 3%;
@@ -69,6 +75,12 @@ body, html {
     position: absolute;
     left: 45%;
     top: 45%;
+}
+
+.ex4 {
+    position: absolute;
+    left: 70%;
+    top: 57%;
 }
 
 .pg1 {
@@ -144,4 +156,11 @@ body, html {
 
 .backwards {
     writing-mode: sideways-rl;
+}
+
+.margin {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: 0;
+    margin-right: 0;
 }

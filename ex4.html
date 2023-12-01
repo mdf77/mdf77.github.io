@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="logic.js" defer></script>
+    <script src="p5.js"></script>
+    <script src="app.js"></script>
+    <title>exercise 4</title>
+    <style>
+        .exercisesRtn {
+            position: absolute;
+            left: 7%;
+            top: 2%;
+            font-family: 'Courier New', monospace;
+        }
+        .home {
+            position: absolute;
+            left: 2%;
+            top: 2%;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <input type="checkbox" id="home" name="home" value="home" onclick="window.location.href='index.html'">
+        <label for="home">home</label>
+    </div>
+    <div class="exercisesRtn">
+        <input type="radio" checked id="exercises" name="exercises" onclick="window.location.href='exercises.html'">
+        <label for="exercises">exercises</label>
+    </div>
+</body>
+</html>
